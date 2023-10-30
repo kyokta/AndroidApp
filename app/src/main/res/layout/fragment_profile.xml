@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/outline_account_circle_24"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rizky Oktarinanto"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textAlignment="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Akun"
+            android:layout_gravity="center"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Nama"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:text=":"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Rizky Oktarinanto"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:text=":"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="rizky@gmail.com"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="No. Telephone"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:text=":"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="081234567890"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

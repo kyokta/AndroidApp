@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">App</string>
+    <!--    Data Movies -->
+    <array name="movie1">
+        <item>Di Ambang Kematian</item>
+        <item>1 Jam 37 Menit</item>
+        <item>Horror</item>
+        <item>Tiga petugas medis dan dua penggali kubur ditugaskan untuk membantu sebuah dusun
+            terpencil yang baru terkena wabah. Setibanya di sana, mereka mulai menyadari ada
+            kemunculan Pocong di dusun tersebut. Apakah semua ini berkaitan dengan adat istiadat di
+            dusun tersebut? Atau ada adat istiadat yang dilanggar oleh mereka?
+        </item>
+    </array>
+    <array name="movie2">
+        <item>Pamali : Dusun Pocong</item>
+        <item>1 Jam 37 Menit</item>
+        <item>Horror</item>
+        <item>Paska kematian ibunya yang tragis, Nadia (Taskya Namya) mengetahui bahwa ayahnya
+            (Rifnu Wikana) terlanjur melakukan pesugihan yang menuntut nyawa manusia. Demi mencegah
+            kematian berikutnya, Nadia, kakaknya Yoga (Wafda) dan sang ayah menempuh ritual-ritual
+            khusus. Namun, Iblis di balik pesugihan itu tetap terus mengintai. Membuat Nadia dan
+            keluarganya hidup bagai di ambang kematian.
+        </item>
+    </array>
+    <array name="movie3">
+        <item>Petualangan Sherina</item>
+        <item>2 Jam 6 Menit</item>
+        <item>Romantis</item>
+        <item>SHERINA (Sherina Munaf) dan SADAM (Derby Romero), dua teman kecil yang lama terpisah,
+            bertemu kembali di Kalimantan untuk pelepasliaran orang utan. Reuni manis terhenti
+            ketika anak orang utan bernama SAYU dicuri sekelompok orang. Sherina dan Sadam harus
+            berusaha menemukan kembali kebersamaan, demi menyelamatkan Sayu dan juga kelangsungan
+            persahabatan mereka yang baru saja tumbuh kembali. Sebuah sekuel dari film legendaris,
+            bernuansa musikal dengan sentuhan aksi petualangan.
+        </item>
+    </array>
+    <array name="movie4">
+        <item>Saw X</item>
+        <item>1 Jam 58 Menit</item>
+        <item>Horror</item>
+        <item>Mengejar sebuah pengobatan yang menjanjikan dapat menyembuhkan kankernya, John Kramer
+            (Tobin Bell) menuju ke Meksiko untuk menjalani perawatan eksperimental, hanya untuk
+            mengetahui bahwa dia menjadi mangsa dari sebuah penipuan. Kini, para scammer menjadi
+            mangsa di permainan baru milik Jigsaw.
+        </item>
+    </array>
 </resources>
