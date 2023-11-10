@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.app.adapter.ItemAdapter
-import com.example.app.data.Datasource
 import com.example.app.databinding.ActivityMainBinding
 import com.example.app.model.Iron
 import com.example.app.model.IronModel
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val client = ApiClient.getInstance()
         val response = client.getData()
-        val listdata = ArrayList<String>()
+        val listdata = ArrayList<Iron>()
 
         response.enqueue(object : Callback<IronModel> {
             override fun onResponse(call: Call<IronModel>, response: Response<IronModel>) {
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 val datas = thisResult?.result ?: emptyList()
                 if (datas.isEmpty()) {
                     for (i in datas) {
-                        listdata.add(i.title)
+                        listdata.add(Iron(i.id, i.title, i.image))
                     }
                 }
 

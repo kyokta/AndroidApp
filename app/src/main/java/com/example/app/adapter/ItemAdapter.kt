@@ -2,11 +2,15 @@ package com.example.app.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.RoundedCorner
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.example.app.R
 import com.example.app.model.Iron
 
@@ -27,7 +31,11 @@ class ItemAdapter (
 
     override fun onBindViewHolder(holder: ItemAdapter.ItemViewHolder, position: Int) {
         val item = data[position]
-        holder.image.setImageResource(item.image)
+        Glide.with(context)
+            .load(item.image)
+            .transform(CenterCrop(), RoundedCorners(16))
+            .into(holder.image)
+
         holder.title.text = item.title
     }
 
