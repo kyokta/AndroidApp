@@ -8,17 +8,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app.R
-import com.example.app.model.Pahlawan
+import com.example.app.model.Iron
 
 class ItemAdapter (
     private val context: Context,
-    private val data: List<Pahlawan>
+    private val data: List<Iron>
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        val image: ImageView = view.findViewById(R.id.img_pahlawan)
-        val name: TextView = view.findViewById(R.id.name_pahlawan)
-        val birthday: TextView = view.findViewById(R.id.birthday_pahlawan)
-        val birthplace: TextView = view.findViewById(R.id.birthplace_pahlawan)
+        val image: ImageView = view.findViewById(R.id.img_iron)
+        val title: TextView = view.findViewById(R.id.title_iron)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
@@ -30,9 +28,7 @@ class ItemAdapter (
     override fun onBindViewHolder(holder: ItemAdapter.ItemViewHolder, position: Int) {
         val item = data[position]
         holder.image.setImageResource(item.image)
-        holder.name.text = item.name
-        holder.birthday.text = item.birthday
-        holder.birthplace.text = item.birthplace
+        holder.title.text = item.title
     }
 
     override fun getItemCount(): Int {

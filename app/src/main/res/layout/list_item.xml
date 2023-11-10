@@ -18,36 +18,20 @@
             android:padding="16dp"
             android:orientation="horizontal">
             <ImageView
-                android:id="@+id/img_pahlawan"
+                android:id="@+id/img_iron"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_gravity="center"/>
-            <LinearLayout
+            <TextView
+                android:id="@+id/title_iron"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/name_pahlawan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nama Pahlawan"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/birthday_pahlawan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tanggal Lahir"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:id="@+id/birthplace_pahlawan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tempat Lahir"
-                    android:textSize="20sp"/>
-            </LinearLayout>
+                android:text="Iron"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
