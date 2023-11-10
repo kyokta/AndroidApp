@@ -27,20 +27,17 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<IronModel>, response: Response<IronModel>) {
                 val thisResult = response.body()
                 val datas = thisResult?.result ?: emptyList()
-                if (datas.isEmpty()) {
+                if (datas.isNotEmpty()) {
                     for (i in datas) {
                         listdata.add(Iron(i.id, i.title, i.image))
                     }
                 }
-
                 binding.listData.adapter = ItemAdapter(this@MainActivity, listdata)
                 binding.listData.setHasFixedSize(true)
             }
-
             override fun onFailure(call: Call<IronModel>, t: Throwable) {
                 Toast.makeText(this@MainActivity, "Connection Error", Toast.LENGTH_SHORT).show()
             }
-
         })
     }
 }
